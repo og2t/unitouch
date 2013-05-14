@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>Gesture Lib debug</title>
+  <meta http-equiv='X-UA-Compatible' content='IE=Edge'>
+  <style>
+    * {
+      /* prevent callout to copy image, etc when tap to hold */
+      -webkit-touch-callout: none;
+      /* prevent webkit from resizing text to fit */
+      -webkit-text-size-adjust: none;
+      /* make link selection transparent */
+      -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    }
+
+    html, body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      /* prevent copy paste, to allow change 'none' to 'text' */
+      -ms-touch-action: none;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -ms-content-zooming: none;
+    }
+
+    .container {
+      width: 1366px;
+      height: 768px;
+      background-color: #38f;
+      -ms-touch-action: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <script src="stats.js"></script>
+  <script src="gestures.js"></script>
+  <script src="touch-balls.js"></script>
+</body>
+</html>

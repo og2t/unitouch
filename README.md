@@ -1,4 +1,6 @@
-unitouch
+UniTouch
 ========
 
-Device independent touch and gesture support
+Device independent touch and gesture support.
+v0.01
+

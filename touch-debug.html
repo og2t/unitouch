@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <title>Gesture Lib debug</title>
+  <meta http-equiv='X-UA-Compatible' content='IE=Edge'>
+  <style>
+    * {
+      /* prevent callout to copy image, etc when tap to hold */
+      -webkit-touch-callout: none;
+      /* prevent webkit from resizing text to fit */
+      -webkit-text-size-adjust: none;
+      /* make link selection transparent */
+      -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    }
+
+    html, body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      /* prevent copy paste, to allow change 'none' to 'text' */
+      -ms-touch-action: none;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -ms-content-zooming: none;
+    }
+
+    .container {
+      width: 1366px;
+      height: 768px;
+      background-color: #38f;
+      -ms-touch-action: none;
+    }
+
+    #log {
+      font-family: Helvetica, Arial;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding-left: 8px;
+      width: 500px;
+      outline: 2px solid black;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 12px;
+    }
+
+    span {
+      color: #fff;
+    }
+
+    input {
+      margin: 0 10px 0 4px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id='log'>
+    <p>Gesture: <span id='gesture'>None</span></p>
+    <p>Gesture Time: <span id='gestureTime'>0</span></p>
+    <p>Rotation: <span id='rotation'>0</span></p>
+    <p>Scale: <span id='scale'>0</span></p>
+    <p>Fingers: <span id='fingers'>0</span></p>
+    <p>Swipe direction: <span id='swipe'>None</span></p>
+    <p>
+      <input onclick="onShowDragDistanceClick()" name="show distance" id="checkbox" value="false" type="checkbox"><label for="checkbox">show travelled distance</label>
+    </p>
+  </div>
+
+  <script src="stats.js"></script>
+  <script src="gestures.js"></script>
+  <script src="touch-debug.js"></script>
+</body>
+</html>
